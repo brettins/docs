@@ -445,6 +445,11 @@ use App\Resolver\BookMutationResolver;
 
 #[ApiResource(
     graphql: [
+        'item_query', 
+        'collection_query',
+        'create',
+        'update',
+        'delete',
         'mutation' => [
             'mutation' => BookMutationResolver::class
         ],
